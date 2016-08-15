@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="vocabApp">
+<head>
+	<title>Marti's Vocab World</title>
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	<script type="text/javascript" src="https://code.angularjs.org/1.5.8/angular-route.min.js"></script>
+
+	<script type="text/javascript" src="js/vocab-bank.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+	<script type="text/javascript" src="js/quizCtrl.js"></script>
+	<script type="text/javascript" src="js/reviewCtrl.js"></script>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="styles.css">
+
+</head>
+<body ng-controller="vocabCtrl">
+<div class="container">
+	<div class="row">
+		<div class="header">
+			<h2>Marti's Vocab Study</h2>
+			<p>This is a webpage created for Marti's vocaburary study. More features to come...</p>
+			<button type="button"><a href="#/review">Review</a></button>
+			<button type="button"><a href="#/quiz">Quiz</a></button></button>
+		</div>
+	</div>
+	<div class="row">
+		<div class="main" ng-view>
+			
+		</div>
+	</div>
+
+</div>
+
+</body>
+</html>

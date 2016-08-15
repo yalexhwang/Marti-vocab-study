@@ -1,0 +1,14 @@
+<h3>Vocab Quiz<br /><small>Test your vocaburary!</small></h3>
+
+	<button type="button" ng-click="startQuiz()"ng-hide="hideStartBtn">Start</button>
+		
+		<div class="question" ng-if="hideStartBtn">
+			<h4>Question {{ qNum }} of {{ numQ }}</h4>
+			<h3 class="q-word" ng-model="qWord">{{qWord}}</h3>
+			<form id="answerOptions" ng-submit="submitForNext()">
+				<div class="q-answers">
+					<li ng-repeat="answer in qAnswers track by $index"><input type="radio" name="answerOption" class="q-answer"ng-model="selected"> {{answer}}</li>
+					<button type="submit" ng-model="nextButton">{{nextButton}}</button>
+				</div>
+			</form>
+		</div>
