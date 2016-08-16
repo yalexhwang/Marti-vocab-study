@@ -14,5 +14,10 @@ vocabApp.config(function($routeProvider) {
 		controller: 'reviewCtrl'
 	});
 
+	$routeProvider.when('/bank', {
+		templateUrl: 'templates/bank.html',
+		controller: 'bankCtrl'
+	});
+
 });
 

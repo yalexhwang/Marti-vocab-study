@@ -1,0 +1,38 @@
+<h3>Vocab Review<br /><small>Memorize as many as you can.</small></h3>
+
+<button type="button" ng-click="showFlashCard()">Flash Cards</button>
+<button type="button" ng-click="showWordBank()">Word Bank List</button>
+
+<div class="main-flashCard" ng-if="flashCardMode">
+	
+	<div id="flashcard">
+		<button type="button" class="flashcard-left"><span class="glyphicon glyphicon-chevron-left" ng-click="prev()"></span></button>
+		<div class="flashcard-content">
+			<h2 ng-model="fcWord">{{fcWord}} <br/>
+			<small ng-model="fcGrmm">{{fcGrmm}}</small></h2>
+			<h3 ng-model="fcMeaning">   {{fcMeaning}}</h3>
+		</div>
+		<button type="button" class="flashcard-right"><span class="glyphicon glyphicon-chevron-right" ng-click="next()"></span></button>
+	</div>
+
+</div>
+
+
+<div class="main-wordBank" ng-if="wordBankMode">
+	<table>
+		<thead>
+			<tr>
+				<th ng-click="orderField='word'; reverse=!reverse">Word</th>
+				<th ng-click="orderField='grmm'; reverse=!reverse">Grammar Info</th>
+				<th ng-click="orderField='meaning'; reverse=!reverse">Meaning</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="word in reviewBank | orderBy: orderField : reverse">
+				<td>{{word.word}}</td>
+				<td>{{word.grmm}}</td>
+				<td>{{word.meaning}}</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
