@@ -1,20 +1,28 @@
-<h3>Word Bank<br /><small>Add and edit the words in Word Bank.</small></h3>
+<div class="header-wrapper">
+	<div class="btn-wrapper">
+		<button type="button" class="back-btn"><a href="/#/"><img src="../compass/images/back.png" width="24px"></a></button>
+	</div>
+	<div class="currentView">Word Bank</div>
+</div>
 
-<div class="main">
-	<form class="col-sm-8">
-		<div class="form-group">
-			<label>Word: </label>
-			<input type="text" class="form-control" placeholder="(Korean)">
-		</div>
-		<div class="form-group">
-			<label>Grammar Info </label>
-			<select class="form-control" ng-model="grmm" ng-options="item for item in grmmArr"></select>
-		</div>
-		<div class="form-group">
-			<label>Meaning: </label>
-			<input type="text" class="form-control" placeholder="(English)">
-		</div>
-		<button type="submit">Add</button>
-	</form>
 
+<div class="view-page">
+
+	<div id="bank-form-wrapper">
+		<form>
+			<div class="form-group">
+				<label>Word: </label>
+				<input type="text" class="form-control" placeholder="(Korean)">
+			</div>
+			<div class="form-group">
+				<label>Grammar Info </label>
+				<select class="form-control" ng-model="grmm" ng-options="item for item in grmmArr"></select>
+			</div>
+			<div class="form-group">
+				<label>Meaning: </label>
+				<input type="text" class="form-control" placeholder="(English)">
+			</div>
+			<button type="submit">Add</button>
+		</form>
+	</div>
 </div>

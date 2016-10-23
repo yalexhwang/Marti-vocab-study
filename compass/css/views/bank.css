@@ -1,0 +1,6 @@
+/* line 1, ../../sass/views/bank.scss */
+#bank-form-wrapper {
+  width: 90%;
+  max-width: 450px;
+  margin: auto;
+}

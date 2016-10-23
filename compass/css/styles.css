@@ -1,0 +1,284 @@
+/* line 1, ../sass/views/review.scss */
+.review-flash {
+  flex: 100%;
+  padding: 15px;
+}
+@media (min-width: 480px) {
+  /* line 1, ../sass/views/review.scss */
+  .review-flash {
+    flex: 0 460px;
+  }
+}
+
+/* line 8, ../sass/views/review.scss */
+.review-bank {
+  flex: 100%;
+  padding: 15px;
+}
+@media (min-width: 480px) {
+  /* line 8, ../sass/views/review.scss */
+  .review-bank {
+    flex: 90%;
+    padding: 0px 20px;
+  }
+}
+
+/* line 17, ../sass/views/review.scss */
+#flashcard {
+  flex: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 5px;
+}
+/* line 24, ../sass/views/review.scss */
+#flashcard .flashcard-btn {
+  width: 15%;
+  padding: 5px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+/* line 30, ../sass/views/review.scss */
+#flashcard .flashcard-btn .flashcard-left, #flashcard .flashcard-btn .flashcard-right {
+  border: 1px solid #ff6f69;
+  background-color: #ffeead;
+  border-radius: 10px;
+  width: 30px;
+}
+/* line 37, ../sass/views/review.scss */
+#flashcard .flashcard-content {
+  width: 70%;
+  padding: 10px 15px;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+}
+
+/* line 46, ../sass/views/review.scss */
+#wordBankTable {
+  max-width: 700px;
+  margin: auto;
+}
+/* line 49, ../sass/views/review.scss */
+#wordBankTable thead {
+  font-size: 13px;
+}
+/* line 52, ../sass/views/review.scss */
+#wordBankTable .col-word {
+  width: 20%;
+}
+/* line 55, ../sass/views/review.scss */
+#wordBankTable .col-gramm {
+  width: 30%;
+}
+/* line 58, ../sass/views/review.scss */
+#wordBankTable .col-meaning {
+  width: 50%;
+}
+
+/* line 1, ../sass/views/quiz.scss */
+.quiz-question {
+  flex: 0 100%;
+  padding: 5px 20px;
+}
+@media (min-width: 480px) {
+  /* line 1, ../sass/views/quiz.scss */
+  .quiz-question {
+    flex: 0 460px;
+  }
+}
+@media (min-width: 768px) {
+  /* line 1, ../sass/views/quiz.scss */
+  .quiz-question {
+    flex: 0 600px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 1, ../sass/views/quiz.scss */
+  .quiz-question {
+    flex: 0 700px;
+  }
+}
+/* line 13, ../sass/views/quiz.scss */
+.quiz-question h3 {
+  margin: 0px;
+}
+/* line 16, ../sass/views/quiz.scss */
+.quiz-question form {
+  margin: 10px 0px;
+}
+/* line 18, ../sass/views/quiz.scss */
+.quiz-question form li {
+  list-style: none;
+  margin: 5px 0px;
+}
+/* line 22, ../sass/views/quiz.scss */
+.quiz-question form button {
+  margin-top: 10px;
+  border: 1px solid #ff6f69;
+  background-color: #ffeead;
+  border-radius: 10px;
+}
+
+/* line 31, ../sass/views/quiz.scss */
+.quiz-result {
+  flex: 0 100%;
+  padding: 5px 20px;
+}
+@media (min-width: 480px) {
+  /* line 31, ../sass/views/quiz.scss */
+  .quiz-result {
+    flex: 0 460px;
+  }
+}
+@media (min-width: 768px) {
+  /* line 31, ../sass/views/quiz.scss */
+  .quiz-result {
+    flex: 0 600px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 31, ../sass/views/quiz.scss */
+  .quiz-result {
+    flex: 0 700px;
+  }
+}
+/* line 43, ../sass/views/quiz.scss */
+.quiz-result .result-details {
+  margin-bottom: 15px;
+}
+/* line 45, ../sass/views/quiz.scss */
+.quiz-result .result-details li {
+  list-style: none;
+  padding: 2px 0px;
+}
+/* line 51, ../sass/views/quiz.scss */
+.quiz-result .result-details li .li-answer {
+  color: red;
+}
+
+/* line 1, ../sass/views/bank.scss */
+#bank-form-wrapper {
+  width: 90%;
+  max-width: 450px;
+  margin: auto;
+}
+
+/* line 8, ../sass/styles.scss */
+body {
+  min-width: 320px;
+}
+/* line 11, ../sass/styles.scss */
+body a {
+  text-decoration: none;
+}
+/* line 14, ../sass/styles.scss */
+body a:hover {
+  text-decoration: none;
+}
+
+/* line 19, ../sass/styles.scss */
+#container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+/* line 23, ../sass/styles.scss */
+#container #title {
+  text-align: center;
+  font-size: 24px;
+  margin: 15px;
+}
+/* line 28, ../sass/styles.scss */
+#container #title-img {
+  margin: 10px auto;
+  width: 160px;
+}
+@media (min-width: 480px) {
+  /* line 28, ../sass/styles.scss */
+  #container #title-img {
+    width: 300px;
+  }
+}
+@media (min-width: 768px) {
+  /* line 28, ../sass/styles.scss */
+  #container #title-img {
+    width: 450px;
+  }
+}
+
+/* line 40, ../sass/styles.scss */
+#view {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+/* line 46, ../sass/styles.scss */
+.main-btn-wrapper {
+  flex: 1 0 100%;
+  margin: 10px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+/* line 58, ../sass/styles.scss */
+.main-btn-wrapper .main-btn {
+  padding: 10px 0px;
+  background-color: #f1efeb;
+  border: 0px;
+  border-radius: 8px;
+  font-size: 20px;
+  width: 300px;
+}
+
+/* line 68, ../sass/styles.scss */
+.header-wrapper {
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+/* line 75, ../sass/styles.scss */
+.header-wrapper .back-btn {
+  color: #FA4041;
+  border: 0px;
+  font-size: 14px;
+  background-color: transparent;
+}
+/* line 81, ../sass/styles.scss */
+.header-wrapper .currentView {
+  text-align: left;
+  font-size: 20px;
+}
+
+/* line 88, ../sass/styles.scss */
+.view-page {
+  margin: 10px;
+  padding-bottom: 20px;
+  min-height: 65vh;
+  width: 100%;
+  background-color: ivory;
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+/* line 98, ../sass/styles.scss */
+.view-page .option-wrapper {
+  flex: 90%;
+  height: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  padding: 15px 0px;
+}
+/* line 105, ../sass/styles.scss */
+.view-page .option-wrapper .option-btn {
+  border: 0px;
+  margin: 0px 5px;
+}

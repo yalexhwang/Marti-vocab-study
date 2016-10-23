@@ -1,9 +1,19 @@
-<h3>Vocab Quiz<br /><small>Test your vocaburary!</small></h3>
+<div class="header-wrapper">
+	<div class="btn-wrapper">
+		<button type="button" class="back-btn"><a href="/#/"><img src="../compass/images/back.png" width="24px"></a></button>
+	</div>
+	<div class="currentView">Quiz</div>
+</div>
 
-	<button type="button" ng-click="startQuiz()" ng-hide="hideStartBtn">Start</button>
-		
+
+<div class="view-page">
+	<div class="option-wrapper">
+	<button type="button" class="option-btn" ng-click="startQuiz()" ng-hide="hideStartBtn">Start</button>
+	</div>
+
+	<div class="quiz quiz-question">
 		<div class="question" ng-if="hideStartBtn" ng-hide="quizDone">
-			<h4>Question {{ qNum }} of {{ numQ }}</h4>
+			<h5>{{ qNum }} of {{ numQ }}</h6>
 			<h3 class="q-word" ng-model="qWord">{{qWord}}</h3>
 			<form id="answerOptions" ng-submit="submitForNext(val)">
 				<div class="q-answers">
@@ -14,17 +24,21 @@
 				</div>
 			</form>
 		</div>
+	</div>
 
+	<div class="quiz quiz-result">
 		<div class="result" ng-if="quizDone">
 			<h4>Your Score: {{score}} </h4>
 			<div class="result-details" ng-model="resultSummary">
 				{{resultSummary}}
 				<li ng-repeat="item in resultSource">
-					{{item.num}}<br />
-					{{item.word}}<br />
-					Correct Answer: {{item.answer}}
+					<span class="li-num">{{item.num}}</span>
+					<span class="li-word">{{item.word}}:</span>
+					<span class="li-answer">{{item.answer}}</span>
 				</li>
 			</div>
 			<button type="button" ng-click="saveScore()" ng-hide="scoreSaved">Save Score</button>
 			<button type="button" ng-click="startQuiz()">Take Again</button>
 		</div>
+	</div>
+</div>
