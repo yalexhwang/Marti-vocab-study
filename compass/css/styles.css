@@ -45,7 +45,7 @@
   border: 1px solid #ff6f69;
   background-color: #ffeead;
   border-radius: 10px;
-  width: 30px;
+  flex: 0 0 30px;
 }
 /* line 37, ../sass/views/review.scss */
 #flashcard .flashcard-content {
