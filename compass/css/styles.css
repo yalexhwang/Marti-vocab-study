@@ -142,7 +142,7 @@
 @media (min-width: 992px) {
   /* line 31, ../sass/views/quiz.scss */
   .quiz-result {
-    flex: 0 700px;
+    flex: 1 0 700px;
   }
 }
 /* line 43, ../sass/views/quiz.scss */
@@ -169,6 +169,7 @@
 /* line 8, ../sass/styles.scss */
 body {
   min-width: 320px;
+  max-width: 1200px;
 }
 /* line 11, ../sass/styles.scss */
 body a {
