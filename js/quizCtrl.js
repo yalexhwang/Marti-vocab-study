@@ -1,4 +1,14 @@
-vocabApp.controller('quizCtrl', function($scope) {
+vocabApp.controller('quizCtrl', function($scope, WordBankService) {
+
+	WordBankService.getFullList()
+	.then(function success(rspns) {
+		console.log(rspns);
+		$scope.fullList = rspns.data.doc;
+	}, function fail(rspns) {
+		console.log(rspns);
+	});
+
+	
 	var questionIndex;
 	var multipleChoiceNum;
 

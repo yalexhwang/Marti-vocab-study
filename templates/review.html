@@ -13,7 +13,7 @@
 	<div class="review review-flash" ng-if="flashCardMode">
 		<div id="flashcard">
 			<div class="flashcard-btn">
-				<button type="button" class="flashcard-left"><span class="glyphicon glyphicon-chevron-left" ng-click="prev()"></span></button>
+				<button type="button" class="flashcard-left" ng-class="noPrev"><span class="glyphicon glyphicon-chevron-left" ng-click="prev()"></span></button>
 			</div>
 			<div class="flashcard-content">
 				<h2 ng-model="fcWord">{{fcWord}} <br/>
@@ -33,15 +33,15 @@
 			<thead>
 				<tr>
 					<th class="col-word" ng-click="orderField='word'; reverse=!reverse">Word</th>
-					<th class="col-gramm"  ng-click="orderField='grmm'; reverse=!reverse">Grammar Info</th>
-					<th class="col-meaning"  ng-click="orderField='meaning'; reverse=!reverse">Meaning</th>
+					<th class="col-gramm"  ng-click="orderField='grmm'; reverse=!reverse">Part of Speech</th>
+					<th class="col-meaning"  ng-click="orderField='definition'; reverse=!reverse">Definition</th>
 				</tr>
 			</thead>
 			<tbody>
-				<tr ng-repeat="word in reviewBank | orderBy: orderField : reverse">
+				<tr ng-repeat="word in fullList | orderBy: orderField : reverse">
 					<td>{{word.word}}</td>
-					<td>{{word.grmm}}</td>
-					<td>{{word.meaning}}</td>
+					<td>{{word.partName}}</td>
+					<td>{{word.definition}}</td>
 				</tr>
 			</tbody>
 		</table>

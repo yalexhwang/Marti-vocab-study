@@ -37,9 +37,24 @@ router.post('/add', function(req, res, next) {
 	});
 });
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+router.post('/get_full_list', function(req, res, next) {
+	console.log('/get_full_list');
+	Word.find({}, function(err, docs) {
+		if (err) {
+			console.log('line 45: error in getting the full list');
+			console.log(err);
+			res.json({
+				passFail: 0,
+				doc: err
+			})
+		} else {
+			console.log(docs);
+			res.json({
+				passFail: 1,
+				doc: docs
+			});
+		}
+	});
 });
 
 module.exports = router;

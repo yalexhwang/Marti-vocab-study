@@ -47,7 +47,11 @@
   border-radius: 10px;
   flex: 0 0 30px;
 }
-/* line 37, ../sass/views/review.scss */
+/* line 38, ../sass/views/review.scss */
+#flashcard .stop {
+  disabled: true;
+}
+/* line 42, ../sass/views/review.scss */
 #flashcard .flashcard-content {
   width: 70%;
   padding: 10px 15px;
@@ -56,24 +60,24 @@
   align-items: flex-start;
 }
 
-/* line 46, ../sass/views/review.scss */
+/* line 51, ../sass/views/review.scss */
 #wordBankTable {
   max-width: 700px;
   margin: auto;
 }
-/* line 49, ../sass/views/review.scss */
+/* line 54, ../sass/views/review.scss */
 #wordBankTable thead {
   font-size: 13px;
 }
-/* line 52, ../sass/views/review.scss */
+/* line 57, ../sass/views/review.scss */
 #wordBankTable .col-word {
   width: 20%;
 }
-/* line 55, ../sass/views/review.scss */
+/* line 60, ../sass/views/review.scss */
 #wordBankTable .col-gramm {
   width: 30%;
 }
-/* line 58, ../sass/views/review.scss */
+/* line 63, ../sass/views/review.scss */
 #wordBankTable .col-meaning {
   width: 50%;
 }
